@@ -97,3 +97,25 @@ function confirmacion(){
         console.log("Quizas en otro momento...\n Gracias de todas formas");
     } 
 }
+//Ejercicio 10
+function fLowerCase(){
+    var frase = document.getElementById('frase').value;
+    var response = document.getElementById('response');
+    var fLower = frase.toLowerCase();
+    response.value = fLower;
+}
+function fUpperCase(){
+    var frase = document.getElementById('frase').value;
+    var response = document.getElementById('response');
+    var fLower = frase.toUpperCase();
+    response.value = fLower;
+}
+function fCapitalize(){
+    var frase = document.getElementById('frase').value;
+    var response = document.getElementById('response');
+    String.prototype.capitalize = function () {
+        return this.replace(/(^|\s)([a-z])/g, function (m, p1, p2) { return p1 + p2.toUpperCase(); });
+    };
+    var fraseCap = frase.capitalize();
+    response.value = fraseCap;
+}
