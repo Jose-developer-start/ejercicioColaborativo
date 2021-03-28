@@ -103,14 +103,18 @@ function getMultiplicacion(){
 }
 
 //Ejercicio 9
-function confirmacion(){
+confirmacion();
+function confirmacion(){ /* creamos una funcion llamada confirmacion */
+
+    /* Le hacemos una pregunta al usuario y lo que ingrese se guardara en la variable "pregunta" */
     var pregunta = prompt("¿Deseas visitar la pagina principal?");
 
-    if(pregunta=="si"){
-        console.log("Te envio alli rapidamente");
-        location="https://uls.edu.sv";
-    }else{
-        console.log("Quizas en otro momento...\n Gracias de todas formas");
+    if(pregunta=="si" || pregunta=="SI"){ /* evaluamos por medio de un bucle if  si la respuesta es "si" */
+        alert("Te envio alli rapidamente"); //Nos mostrara un mensaje por medio de un alert
+        window.location="https://uls.edu.sv";//nos redireccionara al sitio definido
+
+    }else{ /* sino nos mostrara un mensaje por medio de un alert lo contrario */
+        alert("Quizas en otro momento...\n Gracias de todas formas");
     } 
 }
 //Ejercicio 10
