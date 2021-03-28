@@ -56,6 +56,8 @@ function numeroMayor() {
     var number2 = Number(document.getElementById('number2').value);
     if (number1 > number2) {
         alert(number1 + " " + "es el mayor");
+    }else if(number1 == number2){
+        alert(number1 + " son iguales " + number2);
     } else {
         alert(number2 + " " + "es el mayor");
     }
