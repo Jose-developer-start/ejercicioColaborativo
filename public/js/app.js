@@ -16,6 +16,23 @@ butones.forEach(boton => {
                 }
             }
             resP.textContent = "La lista es: " + lista;
+        }else if(event.target.id == 2){
+            var lista = [];
+            var boolean = true;
+            var res_suma = document.getElementById('res-suma');
+            while (boolean == true) {
+                var numero = Number(prompt('Ingresar un número'));
+                if (isNaN(numero)) {
+                    alert('No es un número')
+                }else if(numero == 0){
+                    boolean = false;
+                } else {
+                    lista.push(numero)
+                }
+            }
+            var suma = 0;
+            lista.forEach(sum => suma +=sum);
+            res_suma.textContent = suma;
         }
     })
 })
