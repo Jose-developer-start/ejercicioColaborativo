@@ -16,7 +16,6 @@ butones.forEach(boton => {
                 }
             }
             resP.textContent = "La lista es: " + lista;
-        } else if (event.target.id == 2) {
         }
     })
 })
