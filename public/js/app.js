@@ -103,7 +103,6 @@ function getMultiplicacion(){
 }
 
 //Ejercicio 9
-confirmacion();
 function confirmacion(){ /* creamos una funcion llamada confirmacion */
 
     /* Le hacemos una pregunta al usuario y lo que ingrese se guardara en la variable "pregunta" */
