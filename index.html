@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Ejercicios en el lenguaje de programación javaScript de la materia de Internet II"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Funciones en JavaScript</title>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="content-hero">
+        <h1>Internet II</h1>
+        <h2>Ejercicios en JavaScript <i class="fab fa-js"></i> de Funciones</h2>
+      </div>
+    </header>
+    <main>
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 1</h2></section>
+        <section class="card-content">
+          <p>
+            Se solicita ingresar mediante teclado cadenas de texto, hasta que se
+            pulse un botón llamado “cancelar”. Al salir con “cancelar” deben
+            mostrarse en pantalla todas las cadenas de texto ingresadas
+            concatenadas como una lista.
+          </p>
+        </section>
+        <section class="card-footer">
+          <button id="1" class="btn">ejecutar</button>
+        </section>
+        <section class="card-mas">
+          <p id="res"></p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 2</h2></section>
+        <section class="card-content">
+          <p>
+            Construya un Script que solicite números hasta que se pulse un botón
+            “cancelar”. Cuando el usuario ingrese algo diferente a un número
+            deberá enviarse una notificación con un «alert» y continuar
+            solicitando números. Al salir con “cancelar” deberá indicarse la
+            suma total de los números introducidos.
+          </p>
+        </section>
+        <section class="card-footer">
+          <button id="2" class="btn">ejecutar</button>
+        </section>
+        <section class="card-mas">
+          <p>La suma es: <span id="res-suma">0</span></p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 3</h2></section>
+        <section class="card-content">
+          <p>
+            Escribe un Script que muestre tres mensajes: ¡Hola mundo! en el
+            documento html, con formatos: h1, h2 y h3 Utilizando funciones
+          </p>
+        </section>
+        <section class="card-footer">
+          <button onclick="hola()" class="btn">Mostrar</button>
+        </section>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <h3 id="h3"></h3>
+      </article>
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 4</h2></section>
+        <section class="card-content">
+          <p>Muestra ¡Hola mundo! Por consola</p>
+        </section>
+        <section class="card-footer">
+          <button onclick="holaMundo()" class="btn">ejecutar</button>
+        </section>
+      </article>
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 5</h2></section>
+        <section class="card-content">
+          <p>
+            Crear dos inputs de números y un botón, al pulsar el botón, mostrar
+            en un alert quien es el mayor de los dos número ingresados.
+          </p>
+        </section>
+        <section class="card-mas">
+          <div>
+            <input
+              class="form-input"
+              id="number1"
+              type="number"
+              placeholder="Ingrese un número"
+            />
+          </div>
+          <div>
+            <input
+              class="form-input"
+              id="number2"
+              type="number"
+              placeholder="Ingrese un número"
+            />
+          </div>
+          <div>
+            <button class="btn" onclick="numeroMayor()">Ejecutar</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 6</h2></section>
+        <section class="card-content">
+          <p>
+            Construya un botón de manera que al pulsarlo se genere una lista de
+            5 números aleatorios (Entre 1 y 100) en un select vacío. Al pulsar
+            de nuevo, la lista debe reiniciarse.
+          </p>
+        </section>
+        <section class="card-mas">
+          <select id="select"></select>
+          <button class="btn" onclick="getNumberRandom(1,100)">
+            Generar lista de número
+          </button>
+          <template id="template">
+            <option id="sele" name=""></option>
+          </template>
+        </section>
+      </article>
+
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 7</h2></section>
+        <section class="card-content">
+          <p>
+            Escriba un script que solicite al usuario que ingrese su nombre y mediante un mensaje en el documento con un H1, imprima la cadena de texto “Hola+ ‘nombre_ingresado’, Bienvenido a mi sitio Web y mediante un botón permita cambiar el color y tamaño del mensaje (Cualquier color diferente del negro y blanco es válido)” 
+          </p>
+        </section>
+        <section class="card-mas">
+          <input class="form-input" type="text" id="name" placeholder="Ingrese tú nombre" />
+          <button class="btn" onclick="ingresar()">Ingresar</button>
+          <h1 id="title"></h1>
+          <button class="btn" id="cambiar">Cambiar color y tamaño</button>
+        </section>
+      </article>
+
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 8</h2></section>
+        <section class="card-content">
+          <p>
+            El usuario debe ingresar dos números, el script debe realizar la operación de multiplicar, al presionar el botón ¡Calcular! Se debe mostrar el resultado. (En el ejemplo, ingresamos los valores 2 y 4) para obtener: 
+          </p>
+        </section>
+        <section class="card-mas">
+          <input type="number" min="0" id="num1">
+          x
+          <input type="number" min="0" id="num2">
+          <p id="res_mult"></p>
+          <button onclick="getMultiplicacion()" class="btn">Calcular</button>
+        </section>
+      </article>
+      <article class="card">
+        <section class="card-title"><h2>Ejercicio 9</h2></section>
+        <section class="card-content">
+          <p>
+            Escriba y corrija el siguiente script de manera que funciones, comente cada línea de código explicando su funcionamiento 
+          </p>
+        </section>
+          <button onclick="confirmacion()" class="btn">Calcular</button>
+      </article>
+    </main>
+    <footer>
+      <p>Desarrollador José Deodanes</p>
+    </footer>
+    <script src="public/js/app.js"></script>
+  </body>
+</html>
