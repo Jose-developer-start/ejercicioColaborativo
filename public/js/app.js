@@ -57,7 +57,7 @@ function numeroMayor() {
     if (number1 > number2) {
         alert(number1 + " " + "es el mayor");
     }else if(number1 == number2){
-        alert(number1 + " es iguales a " + number2);
+        alert(number1 + " es igual a " + number2);
     } else {
         alert(number2 + " " + "es el mayor");
     }
